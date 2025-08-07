@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Tunison - Database Administrator & Full Stack Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            padding: 60px 0;
+            background-color: white;
+            margin-bottom: 2px;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .about-content {
+            font-size: 1.1rem;
+            text-align: justify;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .skill-category {
+            background-color: #ecf0f1;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #bdc3c7;
+        }
+
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .job-duration {
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+
+        .company-name {
+            color: #3498db;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: #ecf0f1;
+            padding: 25px;
+            border-radius: 8px;
+            border-top: 4px solid #e74c3c;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .research-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            border-left: 4px solid #9b59b6;
+        }
+
+        .research-title {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            
+            .header-content p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Zachary Tunison</h1>
+                <p>Database Administrator & Full Stack Developer</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a seasoned technology professional with over 15 years of experience spanning database administration, software development, and systems management. My career began during my co-op program at Kettering University, where I cut my teeth transitioning legacy WANG systems to modern digital applications—an experience that taught me the value of bridging old and new technologies.</p>
+                
+                <br>
+                
+                <p>Throughout my career, I've worn multiple hats simultaneously, serving as Lead Software Developer since 2012, Systems Administrator since 2016, and Senior Database Administrator since 2020. This diverse experience has given me a unique perspective on how different layers of technology interact and has made me particularly effective at solving complex, cross-functional problems.</p>
+                
+                <br>
+                
+                <p>My expertise centers on modernizing legacy systems, optimizing database performance, and creating efficiency improvements that have measurable business impact. I've successfully reduced deployment times from hours to minutes, implemented solutions that save users hundreds of hours collectively, and managed critical infrastructure transitions. I'm authorized to work in both the United States and Canada, and I'm currently expanding my knowledge through continued studies at Harvard Extension School.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Master of Liberal Arts (ALM) in Extension Studies</div>
+                    <div class="job-duration">Sep 2024 - Sep 2029</div>
+                </div>
+                <div class="company-name">Harvard Extension School</div>
+                <p>Currently pursuing advanced studies at Harvard Extension School, expanding expertise in contemporary technologies and methodologies.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Bachelor of Science - Computer Science</div>
+                    <div class="job-duration">2007 - 2012</div>
+                </div>
+                <div class="company-name">Kettering University</div>
+                <p>Specialized in System and Data Security with comprehensive coursework in computer science fundamentals, database systems, and cybersecurity principles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Full Stack Development Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <ul class="skill-list">
+                        <li>C# / .NET Framework</li>
+                        <li>.NET</li>
+                        <li>Entity Framework</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Database Technologies</h3>
+                    <ul class="skill-list">
+                        <li>SQL Server Administration</li>
+                        <li>Database Design</li>
+                        <li>Query Optimization</li>
+                        <li>T-SQL Development</li>
+                        <li>Redis Caching</li>
+                        <li>Performance Tuning</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <ul class="skill-list">
+                        <li>Git Version Control</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Docker Containerization</li>
+                        <li>Claude AI Assistant with MCPs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Senior Database Administrator</div>
+                    <div class="job-duration">2020 - Present · 5+ years</div>
+                </div>
+                <ul class="skill-list">
+                    <li>Optimize worst-performing queries monthly, achieving 50-95% performance improvements on execution time and page reads</li>
+                    <li>Manage 40GB production database environment including both OLTP and OLAP systems</li>
+                    <li>Designed and implemented backup strategy with daily full backups and 15-minute transaction log backups to meet company RPO/RTO requirements</li>
+                    <li>Built automated SQL Server maintenance routines to maintain optimal index and statistics health</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Systems Administrator</div>
+                    <div class="job-duration">2016 - Present · 9+ years</div>
+                </div>
+                <ul class="skill-list">
+                    <li>Purchased, installed, and configured 12 servers including 3 SQL Servers, Domain Controllers, Print Servers, Accounting Server, and 3 NetApp file servers</li>
+                    <li>Led transition of 7 mechanical engineers from legacy ProE Version 20 to modern Creo/Windchill platform</li>
+                    <li>Created custom integration tools between Creo/Windchill and ERP systems, reducing Design-to-Production time from hours to minutes</li>
+                    <li>Maintain 99.9%+ uptime across all managed infrastructure</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Lead Software Developer</div>
+                    <div class="job-duration">2012 - Present · 13+ years</div>
+                </div>
+                <ul class="skill-list">
+                    <li>Migrated legacy Access application to modern C#/VB.NET stack, converting 125 forms and 250 reports across 2 million lines of code</li>
+                    <li>Reduced code deployment time from 4 hours to 10 minutes through automated deployment processes</li>
+                    <li>Implemented efficiency improvements saving 70 users an average of 20 minutes daily (1,400+ total minutes saved per day)</li>
+                    <li>Completed transition off WANG computer onto .NET Framework accessed through existing Access front-end</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Software Intern</div>
+                    <div class="job-duration">Co-op Oct 2007 - Jun 2012 · 4 yrs 9 mos</div>
+                </div>
+                <ul class="skill-list">
+                    <li>Built 4 complete replacement systems in Visual Studio 2005 for Purchasing, Accounting, Spare Parts, and Sales departments, transitioning from legacy WANG computers</li>
+                    <li>Impacted 16 users across 4 departments with modern digital paperless applications</li>
+                    <li>Optimized hundreds of SQL queries achieving 30-90% improvements in execution time and reduced page reads</li>
+                    <li>Integrated Distiller, Illustrator, Word, Excel, AutoCAD, and QuickBooks APIs to ensure compliance with company standards and improve user efficiency</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            
+            <div class="research-item">
+                <div class="research-title">Database Performance Optimization</div>
+                <p>Investigating advanced indexing strategies and query optimization techniques for large-scale database systems.</p>
+            </div>
+            
+            <div class="research-item">
+                <div class="research-title">Distributed Caching Systems</div>
+                <p>Exploring the implementation of Redis and other caching solutions to improve application performance and scalability.</p>
+            </div>
+            
+            <div class="research-item">
+                <div class="research-title">Large Language Models</div>
+                <p>Responsible use and careful integration of LLM technologies into business processes and development workflows.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Active Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Collaborative Crossword Solver</h3>
+                    <a href="https://crosswords.tunison.me" class="project-link" target="_blank">crosswords.tunison.me</a>
+                    <p>A collaborative crossword solver using Redis to store state, enabling multiple users to work together on crossword puzzles in real-time. Built with modern web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
